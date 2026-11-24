@@ -93,13 +93,6 @@ for f in pdf/*.pdf; do pdftoppm -r 96 -png -singlefile "$f" "screenshots/$(basen
 Bei jedem Push baut außerdem eine GitHub Action die PDFs und veröffentlicht die Poster-Seite auf GitHub Pages
 (`.github/workflows/poster.yml`).
 
-## Auf draussenfunker.de
-
-Die Poster sollen auch auf [draussenfunker.de](https://draussenfunker.de) verfügbar werden. Der Weg dorthin:
-ein Pull Request aus einem Fork von [draussenfunker/draussenfunker.github.io](https://github.com/draussenfunker/draussenfunker.github.io),
-der die PDFs (und die Vorschaubilder) unter `docs/.vuepress/public/` ablegt und von einer Seite aus verlinkt –
-ähnlich wie die vorhandenen Flyer auf der Seite „Mitmachen“. Dieses Repo bleibt die Quelle; auf die Website kommen die fertigen Dateien.
-
 ## Quellen
 
 Inhalte basieren auf dem Vortrag „Wetterau on the Air“ (DA6MAX) und den Seiten von [draussenfunker.de](https://draussenfunker.de),
