@@ -1,0 +1,60 @@
+name: Poster bauen
+
+# Erzeugt bei jedem Push und Pull Request die PDFs (als Download unter "Artifacts").
+# Auf main wird außerdem die Poster-Seite auf GitHub Pages veröffentlicht.
+# Einmalig nötig: Settings → Pages → Source: "GitHub Actions".
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: PDFs erzeugen
+        env:
+          CHROME: google-chrome
+          CHROME_FLAGS: --no-sandbox
+        run: bash make-pdf.sh
+
+      - name: PDFs als Download bereitstellen
+        uses: actions/upload-artifact@v4
+        with:
+          name: poster-pdf
+          path: pdf/*.pdf
+
+      - name: Seite zusammenstellen
+        run: |
+          mkdir -p _site
+          cp -r poster pdf screenshots _site/
+          cat > _site/index.html <<'HTML'
+          <!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=poster/">
+          <a href="poster/">Zur Posterserie</a>
+          HTML
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          path: _site
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,51 @@
+/* Draußenfunken – Posterserie
+ * Gemeinsame Styles für alle Poster. Farben hier ändern = alle Poster ändern sich.
+ */
+:root {
+  --bg: #E3F1E7;
+  --card: #F6FBF8;
+  --border: #C9E0D1;
+  --text: #143A2A;
+  --text-muted: #4A6656;
+  --line: #7E9A8A;
+  --accent: #1A7A4E;
+  --green-dark: #2F7A55;
+  --green: #5BAE80;
+  --green-light: #8CC3A2;
+  --forest: #BEDCC8;
+  --meadow: #D2E9D9;
+  --wood: #7E6244;
+  --wood-light: #9C7A55;
+  --cone: #E07A2E;
+  --white: #FFFFFF;
+}
+
+/* A4 hochkant: 794 × 1123 px = 210 × 297 mm bei 96 dpi */
+@page { size: A4; margin: 0; }
+
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+html, body { margin: 0; }
+body { background: #9aa5a0; }
+
+.poster {
+  width: 794px;
+  height: 1123px;
+  margin: 24px auto;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+@media print {
+  body { background: none; }
+  .poster { margin: 0; box-shadow: none; }
+}
+
+a { color: var(--accent); }
