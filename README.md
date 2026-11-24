@@ -95,14 +95,14 @@ Bei jedem Push baut außerdem eine GitHub Action die PDFs und veröffentlicht di
 
 ## Quellen
 
-Inhalte basieren auf dem Vortrag „Wetterau on the Air“ (DA6MAX) und den Seiten von [draussenfunker.de](https://draussenfunker.de),
+Inhalte basieren auf dem Vortrag „Wetterau on the Air“ (DM6AX) und den Seiten von [draussenfunker.de](https://draussenfunker.de),
 u. a. dem Portabelrucksack-Artikel und den Bauanleitungen für die Teleskop-Vertical und die EFHW.
 
 ## Lizenz
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/Lizenz-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de)
 
-© 2026 DA6MAX und Mitwirkende. Die Poster stehen unter der
+© 2026 DM6AX und Mitwirkende. Die Poster stehen unter der
 [Creative Commons Namensnennung – Nicht kommerziell – Weitergabe unter gleichen Bedingungen 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de) (CC BY-NC-SA 4.0).
 Du darfst sie frei nutzen, drucken, verteilen und verändern – mit Namensnennung, nicht kommerziell und unter derselben Lizenz.
 Vollständiger Lizenztext: [LICENSE](LICENSE).
