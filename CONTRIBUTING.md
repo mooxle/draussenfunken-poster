@@ -18,6 +18,8 @@ Einfach ein [Issue](../../issues) aufmachen. Kein Git-Wissen nötig.
 
 Die GitHub Action baut für jeden Pull Request automatisch die PDFs. Du findest sie im Tab „Checks“ unter *Artifacts*.
 
+**Englische Fassung:** Zu jedem Poster gibt es eine englische Version in `poster/en/`. Wenn du Inhalte änderst, pass sie dort bitte mit an – oder schreib im Pull Request, dass die Übersetzung noch fehlt.
+
 **Bitte nur HTML und CSS ändern.** PDFs und Screenshots werden nach dem Merge zentral neu erzeugt – so bleiben die Pull Requests übersichtlich.
 
 ## Regeln für die Gestaltung

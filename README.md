@@ -20,6 +20,16 @@ Die Poster sind unabhängig voneinander und können in beliebiger Kombination ge
 >
 > Like *Kindergarten* or *Rucksack*, some German words just travel well – so we keep this one as it is.
 
+## English
+
+All five posters are also available in English – in `poster/en/`, with PDFs in `pdf/en/`.
+The poster for passers-by (*What are you doing there?*) is written for an international audience and points to the
+[IARU](https://www.iaru.org) instead of German regulations.
+
+**View and download:** <https://mooxle.github.io/draussenfunken-poster/poster/en/>
+
+![All five English posters](screenshots/en/overview.png)
+
 ## Die Poster
 
 <table>
@@ -60,7 +70,7 @@ Die Poster sind unabhängig voneinander und können in beliebiger Kombination ge
   </tr>
 </table>
 
-Fertige Druckdateien liegen in `pdf/`.
+Fertige Druckdateien liegen in `pdf/`, die englischen in `pdf/en/`.
 
 ## Ansehen
 
@@ -90,7 +100,7 @@ Zum Bearbeiten und Drucken wird deshalb eine Internetverbindung gebraucht.
 ./make-pdf.sh
 ```
 
-Das Skript schreibt die PDFs nach `pdf/`.
+Das Skript schreibt die PDFs nach `pdf/` und `pdf/en/`.
 
 ## Screenshots aktualisieren
 
@@ -99,6 +109,7 @@ dann zum Beispiel mit Poppler (`brew install poppler`):
 
 ```sh
 for f in pdf/*.pdf; do pdftoppm -r 96 -png -singlefile "$f" "screenshots/$(basename "$f" .pdf)"; done
+for f in pdf/en/*.pdf; do pdftoppm -r 96 -png -singlefile "$f" "screenshots/en/$(basename "$f" .pdf)"; done
 ```
 
 Bei jedem Push baut außerdem eine GitHub Action die PDFs und veröffentlicht die Poster-Seite auf GitHub Pages
