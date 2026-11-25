@@ -98,6 +98,19 @@ Bei jedem Push baut außerdem eine GitHub Action die PDFs und veröffentlicht di
 Inhalte basieren auf dem Vortrag „Wetterau on the Air“ ([DM6AX](https://www.qrz.com/db/DM6AX)) und den Seiten von [draussenfunker.de](https://draussenfunker.de),
 u. a. dem Portabelrucksack-Artikel und den Bauanleitungen für die Teleskop-Vertical und die EFHW.
 
+## Danke
+
+Diese Poster sind durch Feedback aus der Draußenfunker-Community besser geworden. Danke an:
+
+- **Felix, [DL7LW](https://www.qrz.com/db/DL7LW)** – für verständlichere Sprache für Nicht-Funker und den Blick auf die CB-Funk-Frage
+- **Matthias, [DL9MJ](https://www.qrz.com/db/DL9MJ)** – für „Zulassung“ statt „Lizenz“ und den Selbstbau als Argument
+- **Falko, [DM5XT](https://www.qrz.com/db/DM5XT)** – dafür, dass der Sprechfunk nicht fehlen darf
+- **Christian, [DL9CE](https://www.qrz.com/db/DL9CE)**, und **Sharam, [DJ4RAM](https://www.qrz.com/db/DJ4RAM)** – für die Formulierung zur CB-Funk-Frage
+- **Haiko, [DF9HC](https://www.qrz.com/db/DF9HC)** – dafür, die CB-Funk-Frage drin zu lassen, weil sie draußen ständig kommt
+- **Uz, [DF5WC](https://www.qrz.com/db/DF5WC)** – für die Erinnerung, auf Postern sachlich zu bleiben
+
+Weiteres Feedback ist jederzeit willkommen – siehe [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Lizenz
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/Lizenz-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de)
