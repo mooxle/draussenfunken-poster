@@ -9,6 +9,17 @@ Die Poster sind unabhängig voneinander und können in beliebiger Kombination ge
 
 **Mitmachen:** Verbesserungen und neue Poster sind willkommen – siehe [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Draußenfunker?
+
+*A German word worth borrowing:*
+
+> **Draußenfunker** /ˈdʁaʊ̯sn̩ˌfʊŋkɐ/ · *noun, German* · also written *Draussenfunker*
+>
+> 1. Literally „outdoor radio operator“ – from *draußen* (outside) + *Funker* (radio operator).
+> 2. A ham who would rather operate from a park, a summit or a bench than from the shack. Also the name of the German community at [draussenfunker.de](https://draussenfunker.de).
+>
+> Like *Kindergarten* or *Rucksack*, some German words just travel well – so we keep this one as it is.
+
 ## Die Poster
 
 <table>
