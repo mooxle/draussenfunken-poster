@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Flyer – Was macht ihr da eigentlich? – Draußenfunken</title>
+<!-- Doppelseitiger Flyer: Vorderseite + Rückseite. Bindet die beiden Poster direkt ein,
+     Änderungen an den Postern landen damit automatisch auch im Flyer. -->
+<style>
+  @page { size: A4; margin: 0; }
+  html, body { margin: 0; padding: 0; background: #9aa5a0; }
+  iframe { display: block; width: 794px; height: 1123px; border: 0; margin: 24px auto; background: #E3F1E7; }
+  @media print {
+    body { background: none; }
+    iframe { margin: 0; break-after: page; page-break-after: always; }
+    iframe:last-child { break-after: auto; page-break-after: auto; }
+  }
+</style>
+</head>
+<body>
+<iframe src="was-macht-ihr-da.html" title="Vorderseite" scrolling="no"></iframe>
+<iframe src="betriebsarten.html" title="Rückseite" scrolling="no"></iframe>
+</body>
+</html>

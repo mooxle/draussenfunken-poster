@@ -1,9 +1,9 @@
 # Draußenfunken – Posterserie
 
-Fünf A4-Poster rund ums Draußenfunken – zum Aushängen im OV-Heim, Auslegen bei Aktivierungen oder Verteilen an Neugierige.
+Sechs A4-Poster und ein Flyer rund ums Draußenfunken – zum Aushängen im OV-Heim, Auslegen bei Aktivierungen oder Verteilen an Neugierige.
 Die Poster sind unabhängig voneinander und können in beliebiger Kombination genutzt werden.
 
-![Alle fünf Poster im Überblick](screenshots/uebersicht.png)
+![Alle Poster im Überblick](screenshots/uebersicht.png)
 
 **Online ansehen und herunterladen:** <https://mooxle.github.io/draussenfunken-poster/>
 
@@ -22,13 +22,13 @@ Die Poster sind unabhängig voneinander und können in beliebiger Kombination ge
 
 ## English
 
-All five posters are also available in English – in `poster/en/`, with PDFs in `pdf/en/`.
+All posters and the flyer are also available in English – in `poster/en/`, with PDFs in `pdf/en/`.
 The poster for passers-by (*What are you doing there?*) is written for an international audience and points to the
 [IARU](https://www.iaru.org) instead of German regulations.
 
 **View and download:** <https://mooxle.github.io/draussenfunken-poster/poster/en/>
 
-![All five English posters](screenshots/en/overview.png)
+![All English posters](screenshots/en/overview.png)
 
 ## Die Poster
 
@@ -66,11 +66,22 @@ The poster for passers-by (*What are you doing there?*) is written for an intern
       Teleskop-Vertical und EFHW mit Skizze, Eckdaten und Tabelle der auszuziehenden Segmente.<br>
       <code>poster/antennen.html</code></p>
     </td>
-    <td width="33%" valign="top"></td>
+    <td width="33%" valign="top">
+      <a href="screenshots/betriebsarten.png"><img src="screenshots/betriebsarten.png" alt="Poster: Wie funkt ihr eigentlich?"></a>
+      <p><b>Wie funkt ihr eigentlich?</b><br>
+      Sprechfunk, Morsen, Digital – drei von vielen Betriebsarten, verständlich für Passanten. Die Rückseite des Flyers.<br>
+      <code>poster/betriebsarten.html</code></p>
+    </td>
   </tr>
 </table>
 
 Fertige Druckdateien liegen in `pdf/`, die englischen in `pdf/en/`.
+
+### Flyer
+
+`pdf/flyer.pdf` ist ein doppelseitiger Flyer zum Mitgeben an Passanten: vorne „Was macht ihr da eigentlich?“, hinten „Wie funkt ihr eigentlich?“.
+Beidseitig drucken und an der langen Kante wenden. Die Quelle `poster/flyer.html` bindet die beiden Poster direkt ein – Änderungen an den Postern landen
+damit automatisch auch im Flyer. Englische Fassung: `pdf/en/flyer.pdf`.
 
 ## Ansehen
 
