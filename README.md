@@ -141,6 +141,7 @@ Diese Poster sind durch Feedback aus der Draußenfunker-Community besser geworde
 - **Christian, [DL9CE](https://www.qrz.com/db/DL9CE)**, und **Sharam, [DJ4RAM](https://www.qrz.com/db/DJ4RAM)** – für die Formulierung zur CB-Funk-Frage
 - **Haiko, [DF9HC](https://www.qrz.com/db/DF9HC)** – dafür, die CB-Funk-Frage drin zu lassen, weil sie draußen ständig kommt
 - **Uz, [DF5WC](https://www.qrz.com/db/DF5WC)** – für die Erinnerung, auf Postern sachlich zu bleiben
+- **Simon, [DC6ST](https://www.qrz.com/db/DC6ST)** – für den klaren Blick aufs Layout: schlankere Kopfzeile, DARC ausgeschrieben, weniger Doppelungen
 
 Weiteres Feedback ist jederzeit willkommen – siehe [CONTRIBUTING.md](CONTRIBUTING.md).
 
