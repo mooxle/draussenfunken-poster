@@ -30,6 +30,9 @@ The poster for passers-by (*What are you doing there?*) is written for an intern
 
 ![All English posters](screenshots/en/overview.png)
 
+The talk **“Wetterau on the Air”** – an introduction to portable operating and POTA for club evenings – is available in English too,
+as PDF and as PowerPoint to adapt: see [`vortrag/`](vortrag/).
+
 ## Die Poster
 
 <table>
@@ -83,6 +86,14 @@ Fertige Druckdateien liegen in `pdf/`, die englischen in `pdf/en/`.
 Beidseitig drucken und an der langen Kante wenden. Die Quelle `poster/flyer.html` bindet die beiden Poster direkt ein – Änderungen an den Postern landen
 damit automatisch auch im Flyer. Englische Fassung: `pdf/en/flyer.pdf`.
 
+### Vortrag
+
+[![Vortrag „Wetterau on the Air“](screenshots/vortrag.png)](vortrag/wetterau-on-the-air.pdf)
+
+Für den OV-Abend: „Wetterau on the Air“ ist eine Einführung ins Portabelfunken und in Parks on the Air – mit einem Park vor der Haustür
+als Aufhänger. 21 Folien auf Deutsch und Englisch, jeweils als PDF zum Zeigen und als PowerPoint zum Anpassen an den eigenen Park und OV.
+Dateien, Inhalt und Lizenzhinweise (die Folien enthalten Fotos von DK4HAA unter CC BY-NC-ND 4.0 und das POTA-Logo) stehen in [`vortrag/`](vortrag/).
+
 ## Ansehen
 
 `poster/index.html` im Browser öffnen – von dort sind alle Poster verlinkt.
@@ -128,7 +139,7 @@ Bei jedem Push baut außerdem eine GitHub Action die PDFs und veröffentlicht di
 
 ## Quellen
 
-Inhalte basieren auf dem Vortrag „Wetterau on the Air“ ([DM6AX](https://www.qrz.com/db/DM6AX)) und den Seiten von [draussenfunker.de](https://draussenfunker.de),
+Inhalte basieren auf dem [Vortrag „Wetterau on the Air“](vortrag/) ([DM6AX](https://www.qrz.com/db/DM6AX)) und den Seiten von [draussenfunker.de](https://draussenfunker.de),
 u. a. dem Portabelrucksack-Artikel und den Bauanleitungen für die Teleskop-Vertical und die EFHW.
 
 ## Danke

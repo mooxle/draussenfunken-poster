@@ -34,7 +34,7 @@ jobs:
       - name: Seite zusammenstellen
         run: |
           mkdir -p _site
-          cp -r poster pdf screenshots _site/
+          cp -r poster pdf screenshots vortrag _site/
           cat > _site/index.html <<'HTML'
           <!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=poster/">
           <a href="poster/">Zur Posterserie</a>
