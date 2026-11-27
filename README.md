@@ -86,14 +86,6 @@ Fertige Druckdateien liegen in `pdf/`, die englischen in `pdf/en/`.
 Beidseitig drucken und an der langen Kante wenden. Die Quelle `poster/flyer.html` bindet die beiden Poster direkt ein – Änderungen an den Postern landen
 damit automatisch auch im Flyer. Englische Fassung: `pdf/en/flyer.pdf`.
 
-### Vortrag
-
-[![Vortrag „Wetterau on the Air“](screenshots/vortrag.png)](vortrag/wetterau-on-the-air.pdf)
-
-Für den OV-Abend: „Wetterau on the Air“ ist eine Einführung ins Portabelfunken und in Parks on the Air – mit einem Park vor der Haustür
-als Aufhänger. 21 Folien auf Deutsch und Englisch, jeweils als PDF zum Zeigen und als PowerPoint zum Anpassen an den eigenen Park und OV.
-Dateien, Inhalt und Lizenzhinweise (die Folien enthalten Fotos von DK4HAA unter CC BY-NC-ND 4.0 und das POTA-Logo) stehen in [`vortrag/`](vortrag/).
-
 ## Ansehen
 
 `poster/index.html` im Browser öffnen – von dort sind alle Poster verlinkt.
@@ -136,6 +128,18 @@ for f in pdf/en/*.pdf; do pdftoppm -r 96 -png -singlefile "$f" "screenshots/en/$
 
 Bei jedem Push baut außerdem eine GitHub Action die PDFs und veröffentlicht die Poster-Seite auf GitHub Pages
 (`.github/workflows/poster.yml`).
+
+## Vortrag
+
+<a href="vortrag/wetterau-on-the-air.pdf"><img src="screenshots/vortrag.png" alt="Vortrag „Wetterau on the Air“" width="280" align="right"></a>
+
+Für den OV-Abend: **„Wetterau on the Air“** ist eine Einführung ins Portabelfunken und in Parks on the Air – mit einem Park
+vor der Haustür als Aufhänger. 21 Folien auf Deutsch und Englisch, jeweils als PDF zum Zeigen und als PowerPoint zum Anpassen
+an den eigenen Park und OV.
+
+Dateien, Inhalt und Lizenzhinweise stehen in [`vortrag/`](vortrag/). Die Folien enthalten Fotos von DK4HAA unter CC BY-NC-ND 4.0 und das POTA-Logo.
+
+<br clear="right">
 
 ## Quellen
 
