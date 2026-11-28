@@ -82,6 +82,8 @@ Fertige Druckdateien liegen in `pdf/`, die englischen in `pdf/en/`.
 
 ### Flyer
 
+<a href="pdf/flyer.pdf"><img src="screenshots/flyer.png" alt="Flyer: Vorder- und Rückseite" width="480"></a>
+
 `pdf/flyer.pdf` ist ein doppelseitiger Flyer zum Mitgeben an Passanten: vorne „Was macht ihr da eigentlich?“, hinten „Wie funkt ihr eigentlich?“.
 Beidseitig drucken und an der langen Kante wenden. Die Quelle `poster/flyer.html` bindet die beiden Poster direkt ein – Änderungen an den Postern landen
 damit automatisch auch im Flyer. Englische Fassung: `pdf/en/flyer.pdf`.
@@ -122,9 +124,14 @@ Die Bilder in `screenshots/` sind aus den PDFs gerendert. Nach Änderungen an ei
 dann zum Beispiel mit Poppler (`brew install poppler`):
 
 ```sh
-for f in pdf/*.pdf; do pdftoppm -r 96 -png -singlefile "$f" "screenshots/$(basename "$f" .pdf)"; done
-for f in pdf/en/*.pdf; do pdftoppm -r 96 -png -singlefile "$f" "screenshots/en/$(basename "$f" .pdf)"; done
+for f in pdf/*.pdf pdf/en/*.pdf; do
+  [ "$(basename "$f")" = flyer.pdf ] && continue
+  out="screenshots/${f#pdf/}"; pdftoppm -r 96 -png -singlefile "$f" "${out%.pdf}"
+done
 ```
+
+Der Flyer ist ausgenommen: Sein Vorschaubild zeigt Vorder- und Rückseite nebeneinander. Die Übersichtsbilder
+(`uebersicht.png`, `en/overview.png`), die Flyer-Vorschau und `vortrag.png` werden nicht aus den PDFs erzeugt und bei Bedarf von Hand aktualisiert.
 
 Bei jedem Push baut außerdem eine GitHub Action die PDFs und veröffentlicht die Poster-Seite auf GitHub Pages
 (`.github/workflows/poster.yml`).
